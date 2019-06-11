@@ -1,7 +1,7 @@
 FROM ubuntu:trusty
 MAINTAINER tingyao <nclxwen@gmail.com>
 #安装python等相关依赖
-RUN apt-get update && apt-get install -y wget python-dev python-setuptools python-numpy python-scipy zlib1g-dev python-matplotlib python-nose 
+RUN apt-get update && apt-get install -y python-dev python-setuptools python-numpy python-scipy zlib1g-dev python-matplotlib python-nose 
 RUN easy_install pip
 RUN apt-get install -y libpng-dev libfreetype6-dev pkg-config zip python-vtk
 RUN mkdir /mcr-install
